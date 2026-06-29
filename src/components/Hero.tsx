@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import campusHeroImage from "../assets/images/campus_hero_1782189601496.jpg";
 
 interface HeroProps {
   onApplyNowClick: () => void;
@@ -73,7 +74,7 @@ export const Hero: React.FC<HeroProps> = ({ onApplyNowClick }) => {
             {/* Main Hero Image */}
             <div className="relative overflow-hidden rounded-3xl border-4 border-white/10 bg-white/5 shadow-2xl dark:border-white/10 shadow-blue-900/10">
               <img
-                src="/src/assets/images/campus_hero_1782189601496.jpg"
+                src={campusHeroImage}
                 alt="JNS SmartCampus Historic Academic Dome Building"
                 referrerPolicy="no-referrer"
                 className="h-[360px] w-full object-cover sm:h-[480px] hover:scale-103 transition duration-500"
