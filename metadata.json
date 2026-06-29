@@ -1,0 +1,6 @@
+{
+  "name": "JNS SmartCampus",
+  "description": "Enterprise-grade College CRM, ERP, and AI Academic Management platform for JNS SmartCampus, featuring student success tracking, faculty coordination, digital library, automated fee processing, placing analytics, and real-time AI-powered chatbot and reporting services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
