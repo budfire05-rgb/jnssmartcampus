@@ -13,6 +13,8 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { MessageSquare } from "lucide-react";
 
+const CRM_URL = import.meta.env.VITE_CRM_URL || "https://intersyncjns45.vercel.app";
+
 export default function App() {
   const [currentTab, setCurrentTab] = useState<string>("home");
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -66,7 +68,7 @@ export default function App() {
         toggleDarkMode={() => setDarkMode(!darkMode)}
         onApplyNowClick={() => openAdvisor("chatbot")}
         onCrmLoginClick={() => {
-          window.location.href = "http://localhost:3001";
+            window.location.href = CRM_URL;
         }}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
